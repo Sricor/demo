@@ -26,7 +26,6 @@ jobs:
     - name: test
       run: |
         python3 demo.py
-        git diff
         git add index.html
         git commit -m "Github Action Auto Updated"
         git push
