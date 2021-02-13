@@ -27,4 +27,5 @@ jobs:
       run: |
         python3 demo.py
         git add index.html
+        git commit -m "init commit"
         git push
