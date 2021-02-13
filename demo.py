@@ -69,6 +69,6 @@ class Weather():
 if __name__ == '__main__':
     result = Weather(22.26, 112.78).getData()
 
-    with open('weather', 'w') as c:
+    with open('weather.html', 'w') as c:
         c.write(result)
 
