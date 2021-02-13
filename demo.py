@@ -61,7 +61,7 @@ class Weather():
                '%s。<br/>%s。<br/>%s。<br/>%s。<br/>' \
                '%s。<br/>湿度：%s。<br/>能见度：%s。<br/>' \
                '风速：%s。<br/>露点：%s。<br/>紫外线：%s。<br/>月相：%s。<br/>' \
-               '空气质量：%s。；%s。<br/>' \
+               '空气质量：%s；%s<br/>' \
                '健康活动：%s。<br/>' \
                '每天都要开心，祝您生活愉快！ <br/>' % (city, type, feel_temperature, deadline, early, midday, afternoon, midnight, temperature,humidity, yisibility, wind, dew, uv, moon, air[0], air[1], health[1])
 
