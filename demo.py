@@ -71,3 +71,4 @@ if __name__ == '__main__':
 
     with open('weather', 'w') as c:
         c.write(result)
+
