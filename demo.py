@@ -1,4 +1,4 @@
 # coding:utf-8
-i = '123'
+i = '666'
 with open('index.html', 'w') as c:
     c.write(i)
