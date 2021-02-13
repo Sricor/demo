@@ -26,6 +26,9 @@ jobs:
     - name: test
       run: |
         python3 demo.py
+        git diff
+        git config --global user.email "1693437004@qq.com"
+        git config --global user.name "Sricor"
         git add index.html
-        git commit -m "init commit"
+        git commit -m "Github Action Auto Updated"
         git push
