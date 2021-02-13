@@ -26,3 +26,4 @@ jobs:
     - name: test
       run: |
         python3 demo.py
+        git add index.html
