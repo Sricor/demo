@@ -56,18 +56,19 @@ class Weather():
         midnight = '夜间%s，有%s的降雨概率' % (t_midnight, r_midnight)
         temperature = '高/低：%s/%s' % (high_temperature, low_temperature)
 
-        info = '%s<br/>天气：%s<br/>温度：%s<br/>%s<br/>' \
-               '%s<br/>%s<br/>%s<br/>%s<br/>' \
-               '%s<br/>湿度：%s<br/>能见度：%s<br/>' \
-               '风速：%s<br/>露点：%s<br/>紫外线：%s<br/>月相：%s<br/>' \
-               '空气质量：%s；%s<br/>' \
-               '健康活动：%s<br/>' \
-               '祝您生活愉快！' % (city, type, feel_temperature, deadline, early, midday, afternoon, midnight, temperature,humidity, yisibility, wind, dew, uv, moon, air[0], air[1], health[1])
+        info = '***天气推送***<br/>' \
+               '%s。<br/>天气：%s。<br/>温度：%s。<br/>%s。<br/>' \
+               '%s。<br/>%s。<br/>%s。<br/>%s。<br/>' \
+               '%s。<br/>湿度：%s。<br/>能见度：%s。<br/>' \
+               '风速：%s。<br/>露点：%s。<br/>紫外线：%s。<br/>月相：%s。<br/>' \
+               '空气质量：%s。；%s。<br/>' \
+               '健康活动：%s。<br/>' \
+               '每天都要开心，祝您生活愉快！ <br/>' % (city, type, feel_temperature, deadline, early, midday, afternoon, midnight, temperature,humidity, yisibility, wind, dew, uv, moon, air[0], air[1], health[1])
 
         return info
 
 if __name__ == '__main__':
-    result = Weather(22.26, 112.78).getData()
+    result = Weather(25.78, 113.10).getData()
 
     with open('weather.html', 'w') as c:
         c.write(result)
